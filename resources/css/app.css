@@ -27,7 +27,8 @@
     min-height: 100vh;
     flex-direction: column;
   }
-  
+
+
   /* Main content styles */
   main {
     flex: 1;

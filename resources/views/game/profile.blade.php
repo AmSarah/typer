@@ -10,32 +10,36 @@
                 </div>
             </div>
         </section> --}}
-        <section class="mt-2">
-            <h2 class="mt-5">Your Typing History</h2>
-            <!-- Table to display typing history -->
-            <table class="table mt-2">
-                <thead>
-                    <tr>
-                        <th>Completed At</th>
-                        <th>Level</th>
-                        <th>WPM</th>
-                        <th>Accuracy</th>
-                        <th>Error Rate</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @foreach ($rounds as $round)
+        <section class="">
+            <h2 class="">Your Typing History</h2>
+            <!-- Check if there are rounds to display -->
+            @if ($rounds->isEmpty())
+                <p>No typing history available.</p>
+            @else
+                <!-- Table to display typing history -->
+                <table class="table mt-2">
+                    <thead>
                         <tr>
-                            <td>{{ $round->created_at }} </td>
-                            <td>{{ $round->level }}</td>
-                            <td>{{ $round->wpm }}</td>
-                            <td>{{ $round->accuracy }}%</td>
-                            <td>{{ $round->error_rate }}%</td>
-
+                            <th>Completed At</th>
+                            <th>Level</th>
+                            <th>WPM</th>
+                            <th>Accuracy</th>
+                            <th>Error Rate</th>
                         </tr>
-                    @endforeach
-                </tbody>
-            </table>
+                    </thead>
+                    <tbody>
+                        @foreach ($rounds as $round)
+                            <tr>
+                                <td>{{ $round->created_at }} </td>
+                                <td>{{ $round->level }}</td>
+                                <td>{{ $round->wpm }}</td>
+                                <td>{{ $round->accuracy }}%</td>
+                                <td>{{ $round->error_rate }}%</td>
+                            </tr>
+                        @endforeach
+                    </tbody>
+                </table>
+            @endif
         </section>
     </div>
 </x-layout>
