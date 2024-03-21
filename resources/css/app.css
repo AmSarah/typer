@@ -30,7 +30,7 @@
 
 
   /* Main content styles */
-  main {
+  .main {
     flex: 1;
     margin: 100px;
     display: flex;
@@ -38,6 +38,14 @@
     align-items: center;
     padding-top: 60px;
   }
+  .profile-main {
+    flex: 1;
+    margin: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: top !important ;
+    padding-top: 60px;
+}
   
   /* Card styles */
   .card {

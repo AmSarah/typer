@@ -54,11 +54,12 @@
         </div>
     </nav>
 
-    <main>
+    <main class="{{ isset($mainClass) ? $mainClass : 'main' }}">
         {{ $slot }}
     </main>
 
-    <footer class="bg-body-tertiary text-center text-lg-start">
+
+    <footer class="bg-body-tertiary text-center text-lg-start ">
         <div class="text-center p-3" style="background-color: #ea5141; color: white">
             © 2024 Copyright:
             <a class="text-body" href="https://mdbootstrap.com/">typer.com</a>
