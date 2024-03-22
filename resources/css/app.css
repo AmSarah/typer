@@ -46,7 +46,9 @@
     align-items: top !important ;
     padding-top: 60px;
 }
-  
+  td{
+    background-color: #f9f6ed !important;
+  }
   /* Card styles */
   .card {
     background-color: #f9f6ed;
