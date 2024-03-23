@@ -11,14 +11,14 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
     <link rel="stylesheet" href="{{ asset('css/app.css') }}" />
     <title>typer</title>
-    @vite(['resources/css/app.css', 'resources/js/app.js']);
+    @vite('resources/css/app.css');
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="/">
-                <img src="typer.png" alt="Logo" width="50" height="45"
+                <img src="/typer.png" alt="Logo" width="50" height="45"
                     class="d-inline-block align-text-top" />
                 typer
             </a>
@@ -73,7 +73,6 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-    <script src="{{ asset('js/app.js') }}"></script>
 </body>
 
 </html>

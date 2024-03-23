@@ -1,4 +1,6 @@
 <x-layout>
+    @vite('resources/js/app.js');
+
     <div class="container">
 
         <!-- Modal -->
@@ -66,4 +68,6 @@
             <div class="card-footer text-body-secondary" id="counter">0:00</div>
         </div>
     </div>
+    <script src="{{ asset('js/app.js') }}"></script>
+
 </x-layout>

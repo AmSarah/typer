@@ -12,7 +12,7 @@
                 </div>
             </div>
         </section> --}}
-        <h2 class="pb-2">Your Typing History</h2>
+        <h2 class="pb-2 mt-5">Your Typing History</h2>
         <!-- Check if there are rounds to display -->
         @if ($rounds->isEmpty())
             <p>No typing history available.</p>

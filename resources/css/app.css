@@ -1,162 +1,161 @@
 /* Navbar styles */
 .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
-  }
-  
-  /* Navbar background color */
-  .navbar.bg-body-tertiary {
-    background-color: #f9f6ed !important;
-  }
-  
-  /* Navbar brand styles */
-  .navbar-brand {
-    color: #21272d !important;
-    font-size: 26px; /* Adjust font size */
-  }
-  
-  /* Body styles */
-  body {
-    background-color: #f9f6ed;
-    margin: 0;
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-  }
-
-
-  /* Main content styles */
-  .main {
-    flex: 1;
-    margin: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 60px;
-  }
-  .profile-main {
-    flex: 1;
-    margin: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: top !important ;
-    padding-top: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
 }
-  td{
-    background-color: #f9f6ed !important;
-  }
-  /* Card styles */
-  .card {
-    background-color: #f9f6ed;
-    border-color: #ea5141;
-    border-radius: 8px;
-    border-width: 1px;
-    border-style: dotted;
-  }
-  
-  /* Card header styles */
-  .card-header {
-    background-color: #f9f6ed;
-    border-bottom: #ea5141 1px dotted;
-  }
-  
-  /* Button styles */
-  .btn-outline-primary {
-    color: #ea5141;
-    border-color: #ea5141;
-  }
-  
-  /* Checked button styles */
-  .btn-group input[type="radio"].btn-check:checked + label.btn.btn-outline-primary {
-    color: #fff;
-    background-color: #ea5141;
-    border-color: #ea5141;
-  }
-  .btn {
-    cursor: pointer; /* Set the cursor style to pointer */
-  }
-  .modal-content {
-    background-color: #f9f6ed;
-  }
-  
-  /* Customize "Play Again" button color */
-  .btn-play-again,.btn-login {
-    background-color: #ea5141;
-    border-color: #ea5141;
-  
-    color: white;
-  }
- 
-  .btn-play-again:hover,
-  .btn-play-again:focus,
-  .btn-play-again:active,
-  .btn-login:hover,
-  .btn-login:focus,
-  .btn-login:active {
-    background-color: #f9f6ed;
-    border-color: #ea5141;
-    color: #ea5141;
-  }
-  
-  /* Hover state for buttons */
-  .btn-group input[type="radio"].btn-check + label.btn.btn-outline-primary:hover {
-    background-color: #ea5141;
-    border-color: #ea5141;
-    color: #fff;
-  }
-  /* Custom CSS for centering the modal */
-  .modal-dialog {
-    margin-top: calc(50vh - 200px); /* Adjust the value to center the modal */
-  }
-  /* Custom CSS for centering the modal */
-  .modal-dialog {
-    margin-top: calc(50vh - 250px) !important; /* Adjust the value to center the modal */
+
+/* Navbar background color */
+.navbar.bg-body-tertiary {
+  background-color: #f9f6ed !important;
+}
+
+/* Navbar brand styles */
+.navbar-brand {
+  color: #21272d !important;
+  font-size: 26px; /* Adjust font size */
+}
+
+/* Body styles */
+body {
+  background-color: #f9f6ed;
+  margin: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+
+/* Main content styles */
+.main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+}
+.profile-main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: top !important ;
+  padding-top: 60px;
+}
+
+/* Card styles */
+.card {
+  background-color: #f9f6ed;
+  border-color: #ea5141;
+  border-radius: 8px;
+  border-width: 1px;
+  border-style: dotted;
+}
+
+/* Card header styles */
+.card-header {
+  background-color: #f9f6ed;
+  border-bottom: #ea5141 1px dotted;
+}
+
+/* Card footer styles */
+.card-footer {
+  background-color: #f9f6ed;
+  border-top: #ea5141 1px dotted;
+  padding-top: 20px;
+  font-size: 18px;
+}
+
+#wpm{
+  padding-top:15px ;
+  font-size: 18px;
+  font-weight: bold;
   }
   
-  
-  /* Adjust the modal body height as needed */
-  .modal-body {
-    height: auto; /* Set to auto for dynamic height */
-  }
-  
-  .modal-header{
-    border-bottom:#ea5141 dotted 1px;
-  }
-  .modal-footer{
-    border-top:#ea5141 dotted 1px;
-  }
-  th {
-    background-color: #ea5141 !important;
-    color: white !important;
-  }
-  
-  tbody {
-    background-color: transparent !important;
-  }
-  
-  td {
-    border-bottom: 1px dotted #ea5141;
-    padding: 8px;
-  }
-  #wpm{
-    padding-top:15px ;
-    font-size: 18px;
-    font-weight: bold;
-    }
-  /* Card footer styles */
-  .card-footer {
-    background-color: #f9f6ed;
-    border-top: #ea5141 1px dotted;
-    padding-top: 20px;
-    font-size: 18px;
-  }
-  
-  /* Textarea styles */
-  .form-control {
-    background-color: #f9f6ed !important;
-  }
-  
+/* Button styles */
+.btn-outline-primary, .btn-login {
+  color: #ea5141;
+  border-color: #ea5141;
+}
+
+/* Checked button styles */
+.btn-group input[type="radio"].btn-check:checked + label.btn.btn-outline-primary {
+  color: #fff;
+  background-color: #ea5141;
+  border-color: #ea5141;
+}
+.btn {
+  cursor: pointer; /* Set the cursor style to pointer */
+}
+
+
+/* Customize "Play Again" button color */
+.btn-play-again,.btn-login {
+  background-color: #ea5141;
+  border-color: #ea5141;
+
+  color: white;
+}
+
+.btn-play-again:hover,
+.btn-play-again:focus,
+.btn-play-again:active,
+.btn-login:hover,
+.btn-login:focus,
+.btn-login:active {
+  background-color: #f9f6ed;
+  border-color: #ea5141;
+  color: #ea5141;
+}
+
+/* Hover state for buttons */
+.btn-group input[type="radio"].btn-check + label.btn.btn-outline-primary:hover {
+  background-color: #ea5141;
+  border-color: #ea5141;
+  color: #fff;
+}
+/* Custom CSS for centering the modal */
+.modal-dialog {
+  margin-top: calc(50vh - 200px); /* Adjust the value to center the modal */
+}
+/* Custom CSS for centering the modal */
+.modal-dialog {
+  margin-top: calc(50vh - 250px) !important; /* Adjust the value to center the modal */
+}
+
+.modal-content {
+  background-color: #f9f6ed;
+}
+/* Adjust the modal body height as needed */
+.modal-body {
+  height: auto; /* Set to auto for dynamic height */
+}
+
+.modal-header{
+  border-bottom:#ea5141 dotted 1px;
+}
+.modal-footer{
+  border-top:#ea5141 dotted 1px;
+}
+th {
+  background-color: #ea5141 !important;
+  color: white !important;
+}
+
+tbody {
+  background-color: transparent !important;
+}
+
+td {
+  border-bottom: 1px dotted #ea5141;
+  background-color: #f9f6ed !important;
+  padding: 8px;
+}
+
+
+/* Textarea styles */
+.form-control {
+  background-color: #f9f6ed !important;
+}
